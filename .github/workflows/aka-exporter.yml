@@ -27,7 +27,9 @@ jobs:
           dotnet-version: '8.0.100'
 
       - name: Run UnitTests
-        run: dotnet run src/aka.exporter/aka.exporter.csproj exports/aka-export.txt
+        run: |
+            cd src/aka.exporter
+            dotnet run exports/aka-export.txt
         env:
           AKA_TABLE_CONNECTION_STRING: ${{ secrets.AKA_TABLE_CONNECTION_STRING }}
 
