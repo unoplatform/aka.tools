@@ -16,6 +16,8 @@ class Program
 
         var client = new TableClient(connectionString, tableName);
 
+        Directory.CreateDirectory(Path.GetDirectoryName(outputPath)!);
+
         await using (StreamWriter file = new(outputPath))
         {
             await foreach (var entity in client.QueryAsync<TableEntity>())
