@@ -1,0 +1,40 @@
+name: Export Azure Table and Commit
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+
+jobs:
+
+  export-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.100'
+
+      - name: Run UnitTests
+        run: dotnet run src/aka.exporter/aka.exporter.csproj exports/aka-export.txt
+        env:
+          AKA_TABLE_CONNECTION_STRING: ${{ secrets.AKA_TABLE_CONNECTION_STRING }}
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: artifacts
+          path: ./exports
+
+      - name: Commit and Push Changes
+        if: ${{ github.event_name == 'schedule' }}
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update Azure Table Data"
