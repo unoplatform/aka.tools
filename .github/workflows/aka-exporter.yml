@@ -2,7 +2,7 @@ name: Export Azure Table and Commit
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */6 * * *'
 
   pull_request:
     types: [opened, synchronize, reopened]
@@ -14,7 +14,6 @@ on:
       - main
 
 jobs:
-
   export-and-commit:
     runs-on: ubuntu-latest
     steps:
@@ -38,9 +37,3 @@ jobs:
         with:
           name: artifacts
           path: ./exports
-
-      - name: Commit and Push Changes
-        if: ${{ github.event_name == 'schedule' }}
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Update Azure Table Data"
