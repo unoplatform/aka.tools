@@ -25,10 +25,10 @@ jobs:
         with:
           dotnet-version: '8.0.100'
 
-      - name: Run UnitTests
+      - name: Run Exporter
         run: |
             cd src/aka.exporter
-            dotnet run $GITHUB_WORKSPACE/exports/aka-export.txt
+            dotnet run $GITHUB_WORKSPACE/exports/aka-export.csv
         env:
           AKA_TABLE_CONNECTION_STRING: ${{ secrets.AKA_TABLE_CONNECTION_STRING }}
 

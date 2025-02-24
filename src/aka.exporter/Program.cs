@@ -1,6 +1,8 @@
-﻿using Azure.Data.Tables;
+﻿﻿﻿using Azure.Data.Tables;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 class Program
@@ -18,18 +20,46 @@ class Program
 
         Directory.CreateDirectory(Path.GetDirectoryName(outputPath)!);
 
-        await using (StreamWriter file = new(outputPath))
+        // Store rows in a list first to process formatting
+        var rows = new List<(string akaLink, string url, int clicks)>();
+
+        await foreach (var entity in client.QueryAsync<TableEntity>())
         {
-            await foreach (var entity in client.QueryAsync<TableEntity>())
+            if (!(entity.GetBoolean("IsArchived") ?? true))
             {
-                if (!(entity.GetBoolean("IsArchived") ?? true))
-                {
-                    // You can customize the output format here
-                    await file.WriteLineAsync($"https://aka.platform.uno/{entity.GetString("RowKey")} ; {entity.GetString("Url")}"); // Replace with your column name
-                }
+                string akaLink = $"https://aka.platform.uno/{entity.GetString("RowKey")}";
+                string url = entity.GetString("Url") ?? "";
+                int clicks = entity.GetInt32("Clicks") ?? 0;
+
+                rows.Add((akaLink, url, clicks));
             }
         }
 
-        Console.WriteLine($"Data exported to {outputPath}");
+        await using (StreamWriter file = new(outputPath))
+        {
+            // Write the CSV header
+            await file.WriteLineAsync("\"AKA Link\",\"Destination URL\",\"Clicks\"");
+
+            // Write each row with proper CSV escaping
+            foreach (var (akaLink, url, clicks) in rows)
+            {
+                string formattedAkaLink = EscapeCsvValue(akaLink);
+                string formattedUrl = EscapeCsvValue(url);
+                
+                await file.WriteLineAsync($"\"{formattedAkaLink}\",\"{formattedUrl}\",{clicks}");
+            }
+        }
+
+        Console.WriteLine($"CSV data exported to {outputPath}");
+    }
+
+    // Ensure values with commas or quotes are properly escaped in CSV format
+    static string EscapeCsvValue(string value)
+    {
+        if (value.Contains("\""))
+        {
+            value = value.Replace("\"", "\"\""); // Escape double quotes
+        }
+        return value;
     }
 }
