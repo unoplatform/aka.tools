@@ -1,8 +1,10 @@
 ﻿using Azure.Data.Tables;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 class Program
@@ -36,25 +38,30 @@ class Program
         }
 
         // Store rows in a list first to process formatting
-        var rows = new List<(string akaLink, string url, int clicks, string title, int httpResult, string httpStatusLine)>();
+        var bag = new ConcurrentBag<(string akaLink, string url, int clicks, string title, int httpResult, string httpStatusLine)>();
 
-        await foreach (var entity in client.QueryAsync<TableEntity>())
-        {
-            if (!(entity.GetBoolean("IsArchived") ?? true))
+        var parallelOptions = new ParallelOptions { MaxDegreeOfParallelism = 12 };
+
+        await Parallel.ForEachAsync(client.QueryAsync<TableEntity>(), parallelOptions,
+            async (entity, ct) =>
             {
-                string akaLink = $"https://aka.platform.uno/{entity.GetString("RowKey")}";
-                string url = entity.GetString("Url") ?? "";
-                int clicks = entity.GetInt32("Clicks") ?? 0;
-                string title = entity.GetString("Title") ?? "";
-                
-                var (httpResult, httpStatusLine) = await GetHttpResultAndStatusLine(url);
+                if (!(entity.GetBoolean("IsArchived") ?? true))
+                {
+                    string akaLink = $"https://aka.platform.uno/{entity.GetString("RowKey")}";
+                    string url = entity.GetString("Url") ?? "";
+                    int clicks = entity.GetInt32("Clicks") ?? 0;
+                    string title = entity.GetString("Title") ?? "";
 
-                rows.Add((akaLink, url, clicks, title, httpResult, httpStatusLine));
-            }
-        }
+                    var (httpResult, httpStatusLine) = await GetHttpResultAndStatusLine(url, ct);
+
+                    bag.Add((akaLink, url, clicks, title, httpResult, httpStatusLine));
+                }
+            });
 
         var csvFileName =
             Path.Combine(directoryName, Path.GetFileNameWithoutExtension(outputPath) + ".csv");
+        
+        var rows = bag.ToArray();
 
         await using (StreamWriter file = new(csvFileName))
         {
@@ -79,8 +86,8 @@ class Program
         await using (StreamWriter file = new(markdownFileName))
         {
             // Create a beautiful Markdown table
-            await file.WriteLineAsync("| AKA Link | Clicks | Title | HTTP Result | HTTP Status Line |");
-            await file.WriteLineAsync("| --- | --- | --- | --- | --- |");
+            await file.WriteLineAsync("| AKA Link | Title | HTTP Result | HTTP Status Line |");
+            await file.WriteLineAsync("| --- | --- | --- | --- |");
 
             foreach (var (akaLink, url, clicks, title, httpResult, httpStatusLine) in rows)
             {
@@ -89,30 +96,46 @@ class Program
                 string formattedTitle = EscapeMarkdownValue(title);
                 
                 // Coloring the HTTP result based on its value
-                string httpResultColor = httpResult switch
+                string httpResultBadge = httpResult switch
                 {
-                    >= 200 and < 300 => "green",
-                    >= 300 and < 400 => "yellow",
-                    >= 400 => "red",
-                    _ => "gray"
+                    >= 200 and < 300 => $"![](https://img.shields.io/badge/{httpResult}-success-green)",
+                    >= 300 and < 400 => $"![](https://img.shields.io/badge/{httpResult}-redirect-yellow)",
+                    >= 400 => $"![](https://img.shields.io/badge/{httpResult}-error-red)",
+                    _ => $"![](https://img.shields.io/badge/{httpResult}-unknown-gray)"
                 };
                 await file.WriteLineAsync(
-                    $"| [{formattedAkaLink}]({formattedUrl}) | {clicks} | {formattedTitle} | <span style=\"color:{httpResultColor}\">{httpResult}</span> | {EscapeMarkdownValue(httpStatusLine)} |");
+                    $"| [{formattedAkaLink}]({formattedUrl}) | {formattedTitle} | {httpResultBadge} | {EscapeMarkdownValue(httpStatusLine)} |");
             }
         }
     }
 
     private static string EscapeMarkdownValue(string s)
     {
-        // Escape pipe characters and backslashes for Markdown tables
-        // And html encode everything preventing interpretation as MD/HTML stuff
-        return s.Replace("|", "\\|").Replace("\\", "\\\\").Replace("<", "&lt;").Replace(">", "&gt;")
-            .Replace("&", "&amp;").Replace("*", "\\*").Replace("_", "\\_").Replace("`", "\\`");
+        var sb = new StringBuilder(s.Length);
+        foreach (var c in s)
+        {
+            sb.Append(c switch
+            {
+                '|' => "\\|",
+                '\\' => "\\\\",
+                '<' => "&lt;",
+                '>' => "&gt;",
+                '&' => "&amp;",
+                '*' => "\\*",
+                '_' => "\\_",
+                '`' => "\\`",
+                _ => c.ToString()
+            });
+        }
+        return sb.ToString();
     }
 
-    private static HttpClient _httpClient = new();
+    private static readonly HttpClient _httpClient = new HttpClient
+    {
+        Timeout = TimeSpan.FromSeconds(10)
+    };
 
-    private static async Task<(int httpResult, string httpStatusLine)> GetHttpResultAndStatusLine(string url)
+    private static async Task<(int httpResult, string httpStatusLine)> GetHttpResultAndStatusLine(string url, CancellationToken ct)
     {
         var timeout = TimeSpan.FromSeconds(8);
 
