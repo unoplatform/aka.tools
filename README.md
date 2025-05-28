@@ -280,6 +280,7 @@
 | [https://aka.platform.uno/vscode-extension-marketplace](https://marketplace.visualstudio.com/items?itemName=unoplatform.vscode) | VSCode Extension Marketplace | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-mobile-debug](https://platform.uno/docs/articles/create-an-app-vscode.html?tabs=Wasm#debug-the-app) | VSCode Mobile debug | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-omnisharp-devkit](https://platform.uno/docs/articles/get-started-vscode.html?tabs=linux%2Cubuntu1804#omnisharp-legacy-mode) | VSCode Support for omnisharp and C# devkit | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/wasdk-maui-debug-profile-issue](https://developercommunity.visualstudio.com/t/WinAppSDK-Unpackaged-profile-cannot-be-s/10643735) | wasdk-maui-debug-profile-issue | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/wasm-aot](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/runtime-execution-modes.html) | Wasm AOT builds | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/wasm-aot-profile](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/runtime-execution-modes.html#profile-guided-aot) | Wasm AOT profile | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/wasm-csp](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/features-security.html#csp-support) | Wasm CSP | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -302,4 +303,3 @@
 | [https://aka.platform.uno/xaml-trimming](https://platform.uno/docs/articles/features/resources-trimming.html) | XAML Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/wasdk-maui-debug-profile-issue](https://developercommunity.visualstudio.com/t/WinAppSDK-Unpackaged-profile-cannot-be-s/10643735) | wasdk-maui-debug-profile-issue | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
