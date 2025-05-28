@@ -61,7 +61,10 @@ class Program
         var csvFileName =
             Path.Combine(directoryName, Path.GetFileNameWithoutExtension(outputPath) + ".csv");
         
-        var rows = bag.ToArray();
+        var rows = bag
+            .OrderByDescending(row => row.httpResult)
+            .ThenBy(row => row.akaLink)
+            .ToArray();
 
         await using (StreamWriter file = new(csvFileName))
         {
