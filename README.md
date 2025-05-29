@@ -260,6 +260,7 @@
 | [https://aka.platform.uno/UNOB0014](https://platform.uno/docs/articles/uno-build-error-codes.html) | UNOB0014 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/UNOB0015](https://platform.uno/docs/articles/uno-build-error-codes.html#unob0015-the-desktop-targetframework-must-be-placed-first) | UNOB0015 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/UNOB0016](https://platform.uno/docs/articles/uno-build-error-codes.html#unob0016-the-publish-profile-file-must-not-contain-the-publishdir) | UNOB0016 | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/UNOB0017](https://platform.uno/docs/articles/uno-build-error-codes.html) | UNOB0017 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/UNOB0018](https://platform.uno/docs/articles/uno-build-error-codes.html#unob0018-code-signing-cannot-be-applied-on-files-with-extended-attributes-eg-icloud) | UNOB0018 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/unocalc-ratios](https://open.er-api.com/v6/latest/USD) | Uno Calculator Currencies Ratios | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/unocalc-static-currencies](https://uno-assets.platform.uno/uno-calc/static-currencies.json) | Uno Calculator Static Currencies | ![](https://img.shields.io/badge/200-success-green) | OK |
