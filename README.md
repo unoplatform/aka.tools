@@ -25,6 +25,7 @@
 | [https://aka.platform.uno/blog-6-0](https://platform.uno/blog/uno-platform-studio-6-0/) | Uno Blog 6.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrap-jiterpreter](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/runtime-execution-modes.html#jiterpreter-mode) | Bootstrap Jiterpreter | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrap-simd](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/features-simd.html) | Bootstrap SIMD | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/bootstrapper-git](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022) | Bootstrapper Git setup | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrapper-powershell](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/runtime-execution-modes.html#powershell-setup) | Bootstrapper Powershell RemoteSigned for Windows | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/calc-try-uno](https://platform.uno/docs/articles/external/workshops/simple-calc/README.html) | Calculator Try Uno | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/changelog-5-0](https://github.com/unoplatform/uno/releases/tag/5.0.19) | changelog-5.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -296,11 +297,10 @@
 | [https://aka.platform.uno/why-uno-platform](https://platform.uno/docs/articles/concepts/overview/why-uno-platform.html) | why-uno-platform | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/windowing](https://platform.uno/docs/articles/features/windows-ui-xaml-window.html) | Uno Windowing | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/windowing-samples](https://github.com/unoplatform/Uno.Samples/pull/674) | Uno Windowing Samples | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/winui-controls](https://learn.microsoft.com/en-us/windows/apps/design/controls/) | WinUI Controls | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/working-with-themes](https://platform.uno/docs/articles/features/working-with-themes.html) | working-with-themes | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/x11-dbus-troubleshoot](https://platform.uno/docs/articles/features/using-skia-desktop.html) | X11 DBus troubleshooting | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xaml-platform-conditionals](https://platform.uno/docs/articles/platform-specific-xaml.html) | Uno XAML Conditionals | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xaml-trimming](https://platform.uno/docs/articles/features/resources-trimming.html) | XAML Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/bootstrapper-git](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022) | Bootstrapper Git setup | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
-| [https://aka.platform.uno/winui-controls](https://learn.microsoft.com/en-us/windows/apps/design/controls/) | WinUI Controls | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
