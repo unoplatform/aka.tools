@@ -1,6 +1,5 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
-| [https://aka.platform.uno/vscode-extension-marketplace](https://marketplace.visualstudio.com/items?itemName=unoplatform.vscode) | VSCode Extension Marketplace | ![](https://img.shields.io/badge/503-error-red) | Service Unavailable |
 | [https://aka.platform.uno/uno-material-m3-colors](https://m3.material.io/styles/color/roles/color-roles) | Material 3 color guidelines | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/uno-figma-material-toolkit](https://www.figma.com/community/file/1110792522046146058/uno-platform-material-toolkit) | Uno Figma Material Toolkit | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-plugin](https://www.figma.com/community/plugin/1045528009520465828/uno-platform-figma-to-c-or-xaml) | Uno Figma Plugin | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
@@ -279,6 +278,7 @@
 | [https://aka.platform.uno/vs-wizard-getstarted](https://platform.uno/docs/articles/get-started-wizard.html) | VS Wizard - Get Started | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-eula](https://platform.uno/studio/EULA) | VS Code EULA | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-extension](https://platform.uno/docs/articles/get-started-vscode.html) | VS Code Extension | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/vscode-extension-marketplace](https://marketplace.visualstudio.com/items?itemName=unoplatform.vscode) | VSCode Extension Marketplace | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-mobile-debug](https://platform.uno/docs/articles/create-an-app-vscode.html?tabs=Wasm#debug-the-app) | VSCode Mobile debug | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-omnisharp-devkit](https://platform.uno/docs/articles/get-started-vscode.html?tabs=linux%2Cubuntu1804#omnisharp-legacy-mode) | VSCode Support for omnisharp and C# devkit | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/wasdk-maui-debug-profile-issue](https://developercommunity.visualstudio.com/t/WinAppSDK-Unpackaged-profile-cannot-be-s/10643735) | wasdk-maui-debug-profile-issue | ![](https://img.shields.io/badge/200-success-green) | OK |
