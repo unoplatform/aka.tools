@@ -1,5 +1,6 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
+| [https://aka.platform.uno/uno-material-m3-colors](https://m3.material.io/styles/color/roles/color-roles) | Material 3 color guidelines | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/uno-figma-material-toolkit](https://www.figma.com/community/file/1110792522046146058/uno-platform-material-toolkit) | Uno Figma Material Toolkit | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-plugin](https://www.figma.com/community/plugin/1045528009520465828/uno-platform-figma-to-c-or-xaml) | Uno Figma Plugin | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-simplecalc-workshop](https://www.figma.com/community/file/1302362273713845354/simple-calc-workshop) | uno-figma-simplecalc-workshop | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
@@ -303,4 +304,3 @@
 | [https://aka.platform.uno/xaml-trimming](https://platform.uno/docs/articles/features/resources-trimming.html) | XAML Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/uno-material-m3-colors](https://m3.material.io/styles/color/roles/color-roles) | Material 3 color guidelines | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
