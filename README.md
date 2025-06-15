@@ -110,6 +110,7 @@
 | [https://aka.platform.uno/hot-design-new-feedback](https://github.com/unoplatform/studio/issues/new?assignees=&labels=kind%2Ffeedback%2C+triage%2Funtriaged&projects=&template=feedback.md) | hot-design-new-feedback | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-new-issue](https://github.com/unoplatform/studio/issues/new/choose) | hot-design-new-issue | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-privacy-policy](https://platform.uno/privacy-policy/) | hot-design-privacy-policy | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/hot-design-terms-of-use](https://platform.uno/terms-of-use-for-the-uno-platform-websites) | hot-design-terms-of-use | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-reload](https://platform.uno/docs/articles/studio/Hot%20Reload/hot-reload-overview.html) | Hot Reload Docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/how-to-consume-webservices](https://platform.uno/docs/articles/howto-consume-webservices.html) | how-to-consume-webservices | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/how-to-hotswap-app-language](https://platform.uno/docs/articles/guides/hotswap-app-language.html) | how-to-hotswap-app-language | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -303,4 +304,3 @@
 | [https://aka.platform.uno/xaml-trimming](https://platform.uno/docs/articles/features/resources-trimming.html) | XAML Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/hot-design-terms-of-use](https://platform.uno/terms-of-use-for-the-uno-platform-websites) | hot-design-terms-of-use | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
