@@ -18,7 +18,6 @@
 | [https://aka.platform.uno/blog-5-0](https://platform.uno/blog/uno-platform-5-0/) | Blog 5.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-1](https://platform.uno/blog/uno-platform-5-1/) | Blog 5.1 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-2](https://platform.uno/blog/the-first-and-only-true-single-project-for-mobile-web-desktop-and-embedded-in-net/) | Uno Blog 5.2 | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/blog-5-3](https://platform.uno/?p=20838) | Blog 5.3 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-4](https://platform.uno/blog/5-4) | Blog 5.4 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-5](https://platform.uno/blog/uno-platform-5-5-automated-app-packaging-net-9-rc2-opengl-webview2-and-more) | Blog 5.5 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-6](https://platform.uno/blog/5-6/) | Blog 5.6 | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -99,7 +98,6 @@
 | [https://aka.platform.uno/hot-design](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-overview.html) | hot-design | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-counter-tutorial](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-getstarted-counter-tutorial.html) | hot-design-counter-tutorial | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-discussions](https://github.com/unoplatform/studio/discussions) | hot-design-discussions | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/hot-design-eula](https://platform.uno/studio/EULA) | hot-design-eula | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-get-started](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-getstarted-guide.html) | hot-design-get-started | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-issues-new](https://github.com/unoplatform/studio/issues/new) | hot-design-issues-new | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-known-issues](https://github.com/unoplatform/studio/issues/66) | hot-design-known-issues | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -304,3 +302,5 @@
 | [https://aka.platform.uno/xaml-trimming](https://platform.uno/docs/articles/features/resources-trimming.html) | XAML Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/blog-5-3](https://platform.uno/?p=20838) | Blog 5.3 | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
+| [https://aka.platform.uno/hot-design-eula](https://platform.uno/studio/EULA) | hot-design-eula | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
