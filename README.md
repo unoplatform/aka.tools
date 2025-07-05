@@ -1,6 +1,5 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
-| [https://aka.platform.uno/python-install](https://www.microsoft.com/store/productId/9P7QFQMJRFP7) | Bootstrapper Python Install | ![](https://img.shields.io/badge/500-error-red) | Internal Server Error |
 | [https://aka.platform.uno/uno-material-m3-colors](https://m3.material.io/styles/color/roles/color-roles) | Material 3 color guidelines | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/uno-figma-material-toolkit](https://www.figma.com/community/file/1110792522046146058/uno-platform-material-toolkit) | Uno Figma Material Toolkit | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-plugin](https://www.figma.com/community/plugin/1045528009520465828/uno-platform-figma-to-c-or-xaml) | Uno Figma Plugin | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
@@ -62,6 +61,8 @@
 | [https://aka.platform.uno/event-tracing-howto](https://github.com/unoplatform/Uno.Diagnostics.Eventing/blob/main/doc/using-event-tracing.md) | Event Tracing Howto | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/event-tracing-profile](https://github.com/unoplatform/Uno.Diagnostics.Eventing/tree/master/src/Uno.ETLTranslator/Content) | Uno Event Tracing Profile | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/extensions-dependency-injection](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/DependencyInjection/DependencyInjectionOverview.html) | extensions-dependency-injection | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/extensions-http-kiota](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Http/HowTo-Kiota.html) | extensions-http-kiota | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/extensions-http-refit](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Http/HowTo-Refit.html) | extensions-http-refit | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-authentication](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Authentication/AuthenticationOverview.html) | Uno Feature CSharp Authentication | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-authentication-msal](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Authentication/HowTo-MsalAuthentication.html) | Uno Feature Authentication MSAL | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-authentication-oidc](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Authentication/HowTo-OidcAuthentication.html) | Uno Feature Authentication OIDC | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -174,6 +175,7 @@
 | [https://aka.platform.uno/publish-macos-pkg](https://platform.uno/docs/articles/uno-publishing-desktop-macos.html#installer-pkg) | MacOS publish pkg | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/publish-macos-signing](https://platform.uno/docs/articles/uno-publishing-desktop-macos.html#code-signing) | MacOS publish signing | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/publish-snap](https://platform.uno/docs/articles/uno-publishing-desktop.linux.html#snap-packages) | Linux Publish Snap | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/python-install](https://www.microsoft.com/store/productId/9P7QFQMJRFP7) | Bootstrapper Python Install | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/reactive-upgrade-v5](https://platform.uno/docs/articles/external/uno.extensions/doc/ExtensionsOverview.html) | Reactive Upgrade v5 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/reference-samples](https://github.com/unoplatform/Uno.Samples/tree/master/reference) | reference-samples | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/resw-trimming](https://platform.uno/docs/articles/features/upri-trimming.html) | Resources resw Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
