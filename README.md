@@ -1,5 +1,6 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
+| [https://aka.platform.uno/python-install](https://www.microsoft.com/store/productId/9P7QFQMJRFP7) | Bootstrapper Python Install | ![](https://img.shields.io/badge/500-error-red) | Internal Server Error |
 | [https://aka.platform.uno/uno-material-m3-colors](https://m3.material.io/styles/color/roles/color-roles) | Material 3 color guidelines | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/uno-figma-material-toolkit](https://www.figma.com/community/file/1110792522046146058/uno-platform-material-toolkit) | Uno Figma Material Toolkit | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-plugin](https://www.figma.com/community/plugin/1045528009520465828/uno-platform-figma-to-c-or-xaml) | Uno Figma Plugin | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
@@ -18,6 +19,7 @@
 | [https://aka.platform.uno/blog-5-0](https://platform.uno/blog/uno-platform-5-0/) | Blog 5.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-1](https://platform.uno/blog/uno-platform-5-1/) | Blog 5.1 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-2](https://platform.uno/blog/the-first-and-only-true-single-project-for-mobile-web-desktop-and-embedded-in-net/) | Uno Blog 5.2 | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/blog-5-3](https://platform.uno/?p=20838) | Blog 5.3 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-4](https://platform.uno/blog/5-4) | Blog 5.4 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-5](https://platform.uno/blog/uno-platform-5-5-automated-app-packaging-net-9-rc2-opengl-webview2-and-more) | Blog 5.5 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-6](https://platform.uno/blog/5-6/) | Blog 5.6 | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -174,7 +176,6 @@
 | [https://aka.platform.uno/publish-macos-pkg](https://platform.uno/docs/articles/uno-publishing-desktop-macos.html#installer-pkg) | MacOS publish pkg | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/publish-macos-signing](https://platform.uno/docs/articles/uno-publishing-desktop-macos.html#code-signing) | MacOS publish signing | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/publish-snap](https://platform.uno/docs/articles/uno-publishing-desktop.linux.html#snap-packages) | Linux Publish Snap | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/python-install](https://www.microsoft.com/store/productId/9P7QFQMJRFP7) | Bootstrapper Python Install | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/reactive-upgrade-v5](https://platform.uno/docs/articles/external/uno.extensions/doc/ExtensionsOverview.html) | Reactive Upgrade v5 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/reference-samples](https://github.com/unoplatform/Uno.Samples/tree/master/reference) | reference-samples | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/resw-trimming](https://platform.uno/docs/articles/features/upri-trimming.html) | Resources resw Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -305,4 +306,3 @@
 | [https://aka.platform.uno/xaml-trimming](https://platform.uno/docs/articles/features/resources-trimming.html) | XAML Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/blog-5-3](https://platform.uno/?p=20838) | Blog 5.3 | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
