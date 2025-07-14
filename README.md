@@ -5,6 +5,7 @@
 | [https://aka.platform.uno/uno-figma-plugin](https://www.figma.com/community/plugin/1045528009520465828/uno-platform-figma-to-c-or-xaml) | Uno Figma Plugin | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-simplecalc-workshop](https://www.figma.com/community/file/1302362273713845354/simple-calc-workshop) | uno-figma-simplecalc-workshop | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-tubeplayer-workshop](https://www.figma.com/community/file/1302315221756425248/tube-player-workshop) | Uno Figma TubePlayer Workshop | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
+| [https://aka.platform.uno/accessibility](https://platform.uno/docs/articles/features/working-with-accessibility.html) | accessibility | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/account-access](https://platform.uno/docs/articles/get-started-licensing.html) | account-access | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/adjusting-windows-sdk-references](https://platform.uno/docs/articles/features/winapp-sdk-specifics.html#adjusting-windows-sdk-references) | adjusting-windows-sdk-references | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/ancestor-binding](https://platform.uno/docs/articles/external/uno.toolkit.ui/doc/helpers/ancestor-itemscontrol-binding.html#ancestorbinding) | Ancestor Binding | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -51,6 +52,7 @@
 | [https://aka.platform.uno/csharp-styles](https://platform.uno/docs/articles/external/uno.extensions/doc/Reference/Markup/Styles.html) | C# Markup Styles | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/csharp-third-party](https://platform.uno/docs/articles/external/uno.extensions/doc/Reference/Markup/GeneratingExtensions.html) | C# Markup 3rd Party Controls | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/cupertino-getting-started](https://platform.uno/docs/articles/external/uno.themes/doc/cupertino-getting-started.html) | cupertino-getting-started | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/custom-controls](https://platform.uno/docs/articles/guides/creating-custom-controls.html) | custom-controls | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/custom-fonts](https://platform.uno/docs/articles/features/custom-fonts.html) | Custom Fonts | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/custom-variable-fonts](https://platform.uno/docs/articles/features/custom-fonts.html#variable-fonts-and-font-manifest) | Custom Variable Fonts | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/define-routes](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Navigation/HowTo-DefineRoutes.html) | How-To: Define Routes | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -272,6 +274,7 @@
 | [https://aka.platform.uno/upgrade-uno-packages](https://platform.uno/docs/articles/upgrading-nuget-packages.html) | Uno Upgrade packages | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/using-uno-resizetizer](https://platform.uno/docs/articles/external/uno.resizetizer/doc/using-uno-resizetizer.html) | using-uno-resizetizer | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/using-uno-sdk](https://platform.uno/docs/articles/features/using-the-uno-sdk.html) | Using Uno SDK | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/using-winrt](https://platform.uno/docs/articles/features/using-winrt.html) | using-winrt | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/using-wizard](https://platform.uno/docs/articles/getting-started/wizard/using-wizard.html) | using-wizard | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/uwp-upgrade](https://platform.uno/docs/articles/updating-to-winui3.html) | UWP Upgrade Guide | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vs-create-an-app](https://platform.uno/docs/articles/create-an-app-vs2022.html) | vs-create-an-app | ![](https://img.shields.io/badge/200-success-green) | OK |
