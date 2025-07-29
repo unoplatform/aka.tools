@@ -56,7 +56,6 @@
 | [https://aka.platform.uno/custom-fonts](https://platform.uno/docs/articles/features/custom-fonts.html) | Custom Fonts | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/custom-variable-fonts](https://platform.uno/docs/articles/features/custom-fonts.html#variable-fonts-and-font-manifest) | Custom Variable Fonts | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/define-routes](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Navigation/HowTo-DefineRoutes.html) | How-To: Define Routes | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/demo-unexpected-apis](https://unexpectedapis.azurewebsites.net/) | Demo unexpected APIs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/Design-to-Code](https://platform.uno/docs/articles/external/figma-docs/get-started.html) | Design-to-Code | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/discord](https://discord.com/invite/XjsmQHdKfq) | discord | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/dotnet-new-templates](https://platform.uno/docs/articles/get-started-dotnet-new.html) | dotnet new templates docs | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -309,3 +308,4 @@
 | [https://aka.platform.uno/xaml-trimming](https://platform.uno/docs/articles/features/resources-trimming.html) | XAML Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/demo-unexpected-apis](https://unexpectedapis.azurewebsites.net/) | Demo unexpected APIs | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
