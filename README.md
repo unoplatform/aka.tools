@@ -1,7 +1,11 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
+| [https://aka.platform.uno/hot-design-eula](https://platform.uno/studio/EULA) | hot-design-eula | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/hot-design-shortcuts](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-shortcuts.html) | hot-design-shortcuts | ![](https://img.shields.io/badge/404-error-red) | The requested content does not exist. |
+| [https://aka.platform.uno/rider-eula](https://platform.uno/studio/EULA) | Rider EULA | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/uno-material-m3-colors](https://m3.material.io/styles/color/roles/color-roles) | Material 3 color guidelines | ![](https://img.shields.io/badge/404-error-red) | Not Found |
+| [https://aka.platform.uno/vs-eula](https://platform.uno/studio/EULA) | Visual Studio Extension EULA | ![](https://img.shields.io/badge/404-error-red) | Not Found |
+| [https://aka.platform.uno/vscode-eula](https://platform.uno/studio/EULA) | VS Code EULA | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/uno-figma-material-toolkit](https://www.figma.com/community/file/1110792522046146058/uno-platform-material-toolkit) | Uno Figma Material Toolkit | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-plugin](https://www.figma.com/community/plugin/1045528009520465828/uno-platform-figma-to-c-or-xaml) | Uno Figma Plugin | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-simplecalc-workshop](https://www.figma.com/community/file/1302362273713845354/simple-calc-workshop) | uno-figma-simplecalc-workshop | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
@@ -103,7 +107,6 @@
 | [https://aka.platform.uno/hot-design](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-overview.html) | hot-design | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-counter-tutorial](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-getstarted-counter-tutorial.html) | hot-design-counter-tutorial | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-discussions](https://github.com/unoplatform/studio/discussions) | hot-design-discussions | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/hot-design-eula](https://platform.uno/studio/EULA) | hot-design-eula | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-get-started](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-getstarted-guide.html) | hot-design-get-started | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-issues-new](https://github.com/unoplatform/studio/issues/new) | hot-design-issues-new | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/hot-design-known-issues](https://github.com/unoplatform/studio/issues/66) | hot-design-known-issues | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -183,7 +186,6 @@
 | [https://aka.platform.uno/resw-trimming](https://platform.uno/docs/articles/features/upri-trimming.html) | Resources resw Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/rider-create-an-app](https://platform.uno/docs/articles/create-an-app-rider.html) | rider-create-an-app | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/rider-desktop-wasm-support](https://youtrack.jetbrains.com/issue/RIDER-111470/Uno-Platform-5.2-new-targets-frameworks-are-not-supported) | Uno Rider Desktop/wasm support | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/rider-eula](https://platform.uno/studio/EULA) | Rider EULA | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/rider-extension-marketplace](https://plugins.jetbrains.com/plugin/24653-uno-platform) | Rider Extension Marketplace | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/rider-extension-marketplace-versions](https://plugins.jetbrains.com/plugin/24653-uno-platform/versions/preview) | rider-extension-marketplace-versions | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/rider-get-license](https://platform.uno/rider/get-license) | Rider Get License | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -278,10 +280,8 @@
 | [https://aka.platform.uno/using-wizard](https://platform.uno/docs/articles/getting-started/wizard/using-wizard.html) | using-wizard | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/uwp-upgrade](https://platform.uno/docs/articles/updating-to-winui3.html) | UWP Upgrade Guide | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vs-create-an-app](https://platform.uno/docs/articles/create-an-app-vs2022.html) | vs-create-an-app | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/vs-eula](https://platform.uno/studio/EULA) | Visual Studio Extension EULA | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vs-extension-marketplace](https://marketplace.visualstudio.com/items?itemName=unoplatform.uno-platform-addin-2022) | VS Extension Marketplate | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vs-wizard-getstarted](https://platform.uno/docs/articles/get-started-wizard.html) | VS Wizard - Get Started | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/vscode-eula](https://platform.uno/studio/EULA) | VS Code EULA | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-extension](https://platform.uno/docs/articles/get-started-vscode.html) | VS Code Extension | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-extension-marketplace](https://marketplace.visualstudio.com/items?itemName=unoplatform.vscode) | VSCode Extension Marketplace | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/vscode-mobile-debug](https://platform.uno/docs/articles/create-an-app-vscode.html?tabs=Wasm#debug-the-app) | VSCode Mobile debug | ![](https://img.shields.io/badge/200-success-green) | OK |
