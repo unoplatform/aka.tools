@@ -1,5 +1,6 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
+| [https://aka.platform.uno/feature-foldable](https://platform.uno/docs) | Uno Feature Foldable | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/hot-design-eula](https://platform.uno/studio/EULA) | hot-design-eula | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/hot-design-shortcuts](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-shortcuts.html) | hot-design-shortcuts | ![](https://img.shields.io/badge/404-error-red) | The requested content does not exist. |
 | [https://aka.platform.uno/rider-eula](https://platform.uno/studio/EULA) | Rider EULA | ![](https://img.shields.io/badge/404-error-red) | Not Found |
@@ -24,9 +25,8 @@
 | [https://aka.platform.uno/blog-5-0](https://platform.uno/blog/uno-platform-5-0/) | Blog 5.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-1](https://platform.uno/blog/uno-platform-5-1/) | Blog 5.1 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-2](https://platform.uno/blog/the-first-and-only-true-single-project-for-mobile-web-desktop-and-embedded-in-net/) | Uno Blog 5.2 | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/blog-5-4](https://platform.uno/blog/5-4) | Blog 5.4 | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/blog-5-5](https://platform.uno/blog/uno-platform-5-5-automated-app-packaging-net-9-rc2-opengl-webview2-and-more) | Blog 5.5 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-6](https://platform.uno/blog/5-6/) | Blog 5.6 | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/blog-6-0](https://platform.uno/blog/uno-platform-studio-6-0/) | Uno Blog 6.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrap-jiterpreter](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/runtime-execution-modes.html#jiterpreter-mode) | Bootstrap Jiterpreter | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrap-simd](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/features-simd.html) | Bootstrap SIMD | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrapper-git](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022) | Bootstrapper Git setup | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -76,7 +76,6 @@
 | [https://aka.platform.uno/feature-dsp](https://platform.uno/docs/articles/external/uno.toolkit.ui/doc/material-getting-started.html) | Uno Feature DSP | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-extensions](https://platform.uno/docs/articles/external/uno.extensions/doc/ExtensionsOverview.html) | Uno Feature CSharp Extensions | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-extensions-core](https://platform.uno/docs/articles/external/uno.extensions/doc/ExtensionsOverview.html) | Uno Feature Extension Core | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/feature-foldable](https://platform.uno/docs) | Uno Feature Foldable | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-hosting](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Hosting/HostingOverview.html) | Uno Feature Hosting | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-http](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Http/HttpOverview.html) | Uno Feature HTTP | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-localization](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Localization/LocalizationOverview.html) | Uno Feature Localization | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -308,5 +307,6 @@
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-3](https://platform.uno/?p=20838) | Blog 5.3 | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
-| [https://aka.platform.uno/blog-5-5](https://platform.uno/blog/uno-platform-5-5-automated-app-packaging-net-9-rc2-opengl-webview2-and-more) | Blog 5.5 | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
+| [https://aka.platform.uno/blog-5-4](https://platform.uno/blog/5-4) | Blog 5.4 | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
+| [https://aka.platform.uno/blog-6-0](https://platform.uno/blog/uno-platform-studio-6-0/) | Uno Blog 6.0 | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
 | [https://aka.platform.uno/demo-unexpected-apis](https://unexpectedapis.azurewebsites.net/) | Demo unexpected APIs | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
