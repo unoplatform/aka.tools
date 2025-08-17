@@ -87,7 +87,6 @@
 | [https://aka.platform.uno/feature-maps](https://platform.uno/docs) | Uno Feature Maps | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-material](https://platform.uno/docs/articles/external/uno.themes/doc/themes-overview.html) | Uno Feature Material | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-maui-embedding](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Maui/MauiOverview.html) | Uno Feature MAUI Embedding | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/feature-media-element](https://platform.uno/docs/articles/controls/MediaPlayerElement.html) | Uno Feature MediaElement | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-mvux](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Mvux/Overview.html) | Uno Feature MVUX | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-mvvm](https://platform.uno/docs/articles/external/workshops/simple-calc/modules/MVVM-XAML/04-App%20Architecture/README.html) | Uno Feature MVVM | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-navigation](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Navigation/NavigationOverview.html) | Uno Feature Navigation | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -312,3 +311,4 @@
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/demo-unexpected-apis](https://unexpectedapis.azurewebsites.net/) | Demo unexpected APIs | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
+| [https://aka.platform.uno/feature-media-element](https://platform.uno/docs/articles/controls/MediaPlayerElement.html) | Uno Feature MediaElement | ![](https://img.shields.io/badge/0-unknown-gray) | No Connection |
