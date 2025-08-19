@@ -83,6 +83,16 @@ class Program
 
         Console.WriteLine($"CSV data exported to {outputPath}");
         
+        // Calculate summary statistics
+        var successCount = rows.Count(row => row.httpResult >= 200 && row.httpResult < 300);
+        var redirectCount = rows.Count(row => row.httpResult >= 300 && row.httpResult < 400);
+        var errorCount = rows.Count(row => row.httpResult >= 400);
+        var notFoundCount = rows.Count(row => row.httpResult == 0);
+        
+        // Output summary for GitHub workflow to capture
+        var summary = $"{successCount} Oks, {errorCount} Errors, {notFoundCount} NotFound, {redirectCount} Redirects";
+        Console.WriteLine($"EXPORT_SUMMARY={summary}");
+        
         var markdownFileName =
             Path.Combine(directoryName, Path.GetFileNameWithoutExtension(outputPath) + ".md");
 
