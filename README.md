@@ -1,5 +1,6 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
+| [https://aka.platform.uno/demo-unexpected-apis](https://unexpectedapis.azurewebsites.net/) | Demo unexpected APIs | ![](https://img.shields.io/badge/999-error-red) | Timeout |
 | [https://aka.platform.uno/hot-design-eula](https://platform.uno/studio/EULA) | hot-design-eula | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/hot-design-shortcuts](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-shortcuts.html) | hot-design-shortcuts | ![](https://img.shields.io/badge/404-error-red) | The requested content does not exist. |
 | [https://aka.platform.uno/rider-eula](https://platform.uno/studio/EULA) | Rider EULA | ![](https://img.shields.io/badge/404-error-red) | Not Found |
@@ -180,6 +181,7 @@
 | [https://aka.platform.uno/publish-macos-pkg](https://platform.uno/docs/articles/uno-publishing-desktop-macos.html#installer-pkg) | MacOS publish pkg | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/publish-macos-signing](https://platform.uno/docs/articles/uno-publishing-desktop-macos.html#code-signing) | MacOS publish signing | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/publish-snap](https://platform.uno/docs/articles/uno-publishing-desktop.linux.html#snap-packages) | Linux Publish Snap | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/python-install](https://www.microsoft.com/store/productId/9P7QFQMJRFP7) | Bootstrapper Python Install | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/reactive-upgrade-v5](https://platform.uno/docs/articles/external/uno.extensions/doc/ExtensionsOverview.html) | Reactive Upgrade v5 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/reference-samples](https://github.com/unoplatform/Uno.Samples/tree/master/reference) | reference-samples | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/resw-trimming](https://platform.uno/docs/articles/features/upri-trimming.html) | Resources resw Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -310,5 +312,3 @@
 | [https://aka.platform.uno/xaml-trimming](https://platform.uno/docs/articles/features/resources-trimming.html) | XAML Trimming | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/xbind-support](https://platform.uno/docs/articles/features/windows-ui-xaml-xbind.html) | xbind docs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/youtube](https://www.youtube.com/@unoplatform) | youtube | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/demo-unexpected-apis](https://unexpectedapis.azurewebsites.net/) | Demo unexpected APIs | ![](https://img.shields.io/badge/0-unknown-gray) | Timeout |
-| [https://aka.platform.uno/python-install](https://www.microsoft.com/store/productId/9P7QFQMJRFP7) | Bootstrapper Python Install | ![](https://img.shields.io/badge/0-unknown-gray) | Timeout |
