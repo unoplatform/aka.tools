@@ -92,8 +92,8 @@ class Program
         // Calculate summary statistics
         var successCount = rows.Count(row => row.httpResult >= 200 && row.httpResult < 300);
         var redirectCount = rows.Count(row => row.httpResult >= 300 && row.httpResult < 400);
-        var errorCount = rows.Count(row => row.httpResult >= 400);
-        var notFoundCount = rows.Count(row => row.httpResult == 0);
+        var errorCount = rows.Count(row => row.httpResult >= 400 && row.httpResult < 999);
+        var notFoundCount = rows.Count(row => row.httpResult == 999);
         
         // Output summary for GitHub workflow to capture
         var summary = $"{successCount} Oks, {errorCount} Errors, {notFoundCount} NotFound, {redirectCount} Redirects";
@@ -158,6 +158,7 @@ class Program
     private static readonly IAsyncPolicy<HttpResponseMessage> _retryPolicy = Policy
         .Handle<HttpRequestException>()
         .Or<TaskCanceledException>()
+        .Or<OperationCanceledException>()
         .Or<SocketException>()
         .Or<TimeoutException>()
         .OrResult<HttpResponseMessage>(r => !r.IsSuccessStatusCode && (
@@ -169,7 +170,7 @@ class Program
             r.StatusCode == HttpStatusCode.GatewayTimeout))
         .WaitAndRetryAsync(
             retryCount: 3,
-            sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(Random.Shared.Next(0, 1000)),
+            sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(Random.Shared.Next(60, 1200)),
             onRetry: (outcome, timespan, retryCount, context) =>
             {
                 var url = context.ContainsKey("url") ? context["url"].ToString() : "unknown";
@@ -206,27 +207,27 @@ class Program
         catch (OperationCanceledException) when (ct.IsCancellationRequested)
         {
             Console.Error.WriteLine($"ERROR: Operation was cancelled for URL {url}");
-            return (0, "Operation Cancelled");
+            return (999, "Operation Cancelled");
         }
         catch (OperationCanceledException)
         {
             Console.Error.WriteLine($"ERROR: Timeout after 3 retries for URL {url}");
-            return (0, "Timeout");
+            return (999, "Timeout");
         }
         catch (HttpRequestException ex)
         {
             Console.Error.WriteLine($"ERROR: HTTP error after 3 retries for URL {url}: {ex.Message}");
-            return (0, "HTTP Error");
+            return (999, "HTTP Error");
         }
         catch (SocketException ex)
         {
             Console.Error.WriteLine($"ERROR: DNS/Socket error after 3 retries for URL {url}: {ex.Message}");
-            return (0, "DNS/Socket Error");
+            return (999, "DNS/Socket Error");
         }
         catch (Exception ex)
         {
             Console.Error.WriteLine($"ERROR: Unexpected error after 3 retries for URL {url}: {ex.Message}");
-            return (0, "Unexpected Error");
+            return (999, "Unexpected Error (see logs for details)");
         }
     }
 
