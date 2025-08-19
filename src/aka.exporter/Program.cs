@@ -4,20 +4,25 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using Polly;
+using Polly.Extensions.Http;
 
 class Program
 {
     static async Task Main(string[] args)
     {
-        string connectionString = Environment.GetEnvironmentVariable("AKA_TABLE_CONNECTION_STRING")
-                                  ?? throw new InvalidOperationException(
-                                      $"Unable to find environment variable AKA_TABLE_CONNECTION_STRING");
+        var connectionString = Environment.GetEnvironmentVariable("AKA_TABLE_CONNECTION_STRING")
+                               ?? throw new InvalidOperationException(
+                                   $"Unable to find environment variable AKA_TABLE_CONNECTION_STRING");
 
-        string tableName = "UrlsDetails"; // Replace with your table name
-        string outputPath = args.FirstOrDefault()
-                            ?? throw new InvalidOperationException($"The first parameter must be the output path");
+        var tableName = "UrlsDetails"; // Replace with your table name
+        var outputPath = args.FirstOrDefault()
+                         ?? throw new InvalidOperationException($"The first parameter must be the output path");
 
         var client = new TableClient(connectionString, tableName);
 
@@ -38,7 +43,7 @@ class Program
         }
 
         // Store rows in a list first to process formatting
-        var bag = new ConcurrentBag<(string akaLink, string url, int clicks, string title, int httpResult, string httpStatusLine)>();
+        var bag = new ConcurrentBag<(string rowKey, string akaLink, string url, int clicks, string title, int httpResult, string httpStatusLine)>();
 
         var parallelOptions = new ParallelOptions { MaxDegreeOfParallelism = 12 };
 
@@ -47,14 +52,15 @@ class Program
             {
                 if (!(entity.GetBoolean("IsArchived") ?? true))
                 {
-                    string akaLink = $"https://aka.platform.uno/{entity.GetString("RowKey")}";
-                    string url = entity.GetString("Url") ?? "";
-                    int clicks = entity.GetInt32("Clicks") ?? 0;
-                    string title = entity.GetString("Title") ?? "";
+                    var rowKey = entity.GetString("RowKey") ?? "";
+                    var akaLink = $"https://aka.platform.uno/{rowKey}";
+                    var url = entity.GetString("Url") ?? "";
+                    var clicks = entity.GetInt32("Clicks") ?? 0;
+                    var title = entity.GetString("Title") ?? "";
 
                     var (httpResult, httpStatusLine) = await GetHttpResultAndStatusLine(url, ct);
 
-                    bag.Add((akaLink, url, clicks, title, httpResult, httpStatusLine));
+                    bag.Add((rowKey, akaLink, url, clicks, title, httpResult, httpStatusLine));
                 }
             });
 
@@ -72,7 +78,7 @@ class Program
             await file.WriteLineAsync("\"AKA Link\",\"Destination URL\",\"Clicks\",\"Title\",\"HTTP Result\",\"HTTP\"");
 
             // Write each row with proper CSV escaping
-            foreach (var (akaLink, url, clicks, title, httpResult, httpStatusLine) in rows)
+            foreach (var (rowKey, akaLink, url, clicks, title, httpResult, httpStatusLine) in rows)
             {
                 string formattedAkaLink = EscapeCsvValue(akaLink);
                 string formattedUrl = EscapeCsvValue(url);
@@ -102,7 +108,7 @@ class Program
             await file.WriteLineAsync("| AKA Link | Title | HTTP Result | HTTP Status Line |");
             await file.WriteLineAsync("| --- | --- | --- | --- |");
 
-            foreach (var (akaLink, url, clicks, title, httpResult, httpStatusLine) in rows)
+            foreach (var (rowKey, akaLink, url, clicks, title, httpResult, httpStatusLine) in rows)
             {
                 string formattedAkaLink = EscapeMarkdownValue(akaLink);
                 string formattedUrl = url;
@@ -145,23 +151,82 @@ class Program
 
     private static readonly HttpClient _httpClient = new HttpClient
     {
-        Timeout = TimeSpan.FromSeconds(10)
+        Timeout = TimeSpan.FromSeconds(30) // Increased timeout to account for retries
     };
+
+    // Retry policy for handling transient failures
+    private static readonly IAsyncPolicy<HttpResponseMessage> _retryPolicy = Policy
+        .Handle<HttpRequestException>()
+        .Or<TaskCanceledException>()
+        .Or<SocketException>()
+        .Or<TimeoutException>()
+        .OrResult<HttpResponseMessage>(r => !r.IsSuccessStatusCode && (
+            r.StatusCode == HttpStatusCode.RequestTimeout ||
+            r.StatusCode == HttpStatusCode.TooManyRequests ||
+            r.StatusCode == HttpStatusCode.InternalServerError ||
+            r.StatusCode == HttpStatusCode.BadGateway ||
+            r.StatusCode == HttpStatusCode.ServiceUnavailable ||
+            r.StatusCode == HttpStatusCode.GatewayTimeout))
+        .WaitAndRetryAsync(
+            retryCount: 3,
+            sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)) + TimeSpan.FromMilliseconds(Random.Shared.Next(0, 1000)),
+            onRetry: (outcome, timespan, retryCount, context) =>
+            {
+                var url = context.ContainsKey("url") ? context["url"].ToString() : "unknown";
+                Console.WriteLine($"[RETRY {retryCount}/3] {url} - waiting {timespan.TotalMilliseconds:F0}ms - reason: {outcome.Exception?.Message ?? outcome.Result?.StatusCode.ToString()}");
+            });
 
     private static async Task<(int httpResult, string httpStatusLine)> GetHttpResultAndStatusLine(string url, CancellationToken ct)
     {
-        var timeout = TimeSpan.FromSeconds(8);
+        var timeout = TimeSpan.FromSeconds(10);
 
         try
         {
-            using var cts = new CancellationTokenSource(timeout);
-            var response = await _httpClient.GetAsync(url, cts.Token);
-            return ((int)response.StatusCode, response.ReasonPhrase ?? "No Status Line");
+            var context = new Context { ["url"] = url };
+            
+            using var cts = CancellationTokenSource.CreateLinkedTokenSource(ct);
+            cts.CancelAfter(timeout);
+            
+            var response = await _retryPolicy.ExecuteAsync(async (ctx, cancellationToken) =>
+            {
+                return await _httpClient.GetAsync(url, cancellationToken);
+            }, context, cts.Token);
+
+            var statusCode = (int)response.StatusCode;
+            var reasonPhrase = response.ReasonPhrase ?? "No Status Line";
+            
+            // Log error messages for HTTP error status codes
+            if (statusCode >= 400)
+            {
+                Console.Error.WriteLine($"ERROR: HTTP {statusCode} for URL {url}: {reasonPhrase}");
+            }
+
+            return (statusCode, reasonPhrase);
+        }
+        catch (OperationCanceledException) when (ct.IsCancellationRequested)
+        {
+            Console.Error.WriteLine($"ERROR: Operation was cancelled for URL {url}");
+            return (0, "Operation Cancelled");
+        }
+        catch (OperationCanceledException)
+        {
+            Console.Error.WriteLine($"ERROR: Timeout after 3 retries for URL {url}");
+            return (0, "Timeout");
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.Error.WriteLine($"ERROR: HTTP error after 3 retries for URL {url}: {ex.Message}");
+            return (0, "HTTP Error");
+        }
+        catch (SocketException ex)
+        {
+            Console.Error.WriteLine($"ERROR: DNS/Socket error after 3 retries for URL {url}: {ex.Message}");
+            return (0, "DNS/Socket Error");
         }
         catch (Exception ex)
         {
-            Console.Error.WriteLine($"Error fetching URL {url}: {ex.Message}");
-            return (0, "No Connection");
+            Console.Error.WriteLine($"ERROR: Unexpected error after 3 retries for URL {url}: {ex.Message}");
+            return (0, "Unexpected Error");
         }
     }
 
