@@ -1,5 +1,6 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
+| [https://aka.platform.uno/calc-try-uno](https://platform.uno/docs/articles/external/workshops/simple-calc/README.html) | Calculator Try Uno | ![](https://img.shields.io/badge/999-error-red) | Timeout |
 | [https://aka.platform.uno/hot-design-shortcuts](https://platform.uno/docs/articles/studio/Hot%20Design/hot-design-shortcuts.html) | hot-design-shortcuts | ![](https://img.shields.io/badge/404-error-red) | The requested content does not exist. |
 | [https://aka.platform.uno/uno-material-m3-colors](https://m3.material.io/styles/color/roles/color-roles) | Material 3 color guidelines | ![](https://img.shields.io/badge/404-error-red) | Not Found |
 | [https://aka.platform.uno/uno-figma-material-toolkit](https://www.figma.com/community/file/1110792522046146058/uno-platform-material-toolkit) | Uno Figma Material Toolkit | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
@@ -29,7 +30,6 @@
 | [https://aka.platform.uno/bootstrap-simd](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/features-simd.html) | Bootstrap SIMD | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrapper-git](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022) | Bootstrapper Git setup | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrapper-powershell](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/runtime-execution-modes.html#powershell-setup) | Bootstrapper Powershell RemoteSigned for Windows | ![](https://img.shields.io/badge/200-success-green) | OK |
-| [https://aka.platform.uno/calc-try-uno](https://platform.uno/docs/articles/external/workshops/simple-calc/README.html) | Calculator Try Uno | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/changelog-5-0](https://github.com/unoplatform/uno/releases/tag/5.0.19) | changelog-5.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/changelog-5-5](https://github.com/unoplatform/uno/releases/tag/5.5.37) | Uno Changelog 5.5 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/changelog-5-6](https://github.com/unoplatform/uno/releases/tag/5.6.30) | Uno Changelog 5.6 | ![](https://img.shields.io/badge/200-success-green) | OK |
