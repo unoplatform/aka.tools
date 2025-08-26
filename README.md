@@ -24,6 +24,8 @@
 | [https://aka.platform.uno/blog-5-5](https://platform.uno/blog/uno-platform-5-5-automated-app-packaging-net-9-rc2-opengl-webview2-and-more) | Blog 5.5 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-5-6](https://platform.uno/blog/5-6/) | Blog 5.6 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/blog-6-0](https://platform.uno/blog/uno-platform-studio-6-0/) | Uno Blog 6.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/blog-6-1](https://platform.uno/blog/uno-platform-6-1/) | blog-6-1 | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/blog-6-2](https://platform.uno/blog/uno-platform-6-2-smoother-faster-everywhere/) | blog-6-2 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrap-jiterpreter](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/runtime-execution-modes.html#jiterpreter-mode) | Bootstrap Jiterpreter | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrap-simd](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/features-simd.html) | Bootstrap SIMD | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrapper-git](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022) | Bootstrapper Git setup | ![](https://img.shields.io/badge/200-success-green) | OK |
