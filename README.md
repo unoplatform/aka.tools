@@ -30,6 +30,7 @@
 | [https://aka.platform.uno/bootstrap-simd](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/features-simd.html) | Bootstrap SIMD | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrapper-git](https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022) | Bootstrapper Git setup | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/bootstrapper-powershell](https://platform.uno/docs/articles/external/uno.wasm.bootstrap/doc/runtime-execution-modes.html#powershell-setup) | Bootstrapper Powershell RemoteSigned for Windows | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/bug-report](https://github.com/unoplatform/uno/issues/new?template=bug-report.yml) | bug-report | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/calc-try-uno](https://platform.uno/docs/articles/external/workshops/simple-calc/README.html) | Calculator Try Uno | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/changelog-5-0](https://github.com/unoplatform/uno/releases/tag/5.0.19) | changelog-5.0 | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/changelog-5-5](https://github.com/unoplatform/uno/releases/tag/5.5.37) | Uno Changelog 5.5 | ![](https://img.shields.io/badge/200-success-green) | OK |
@@ -61,7 +62,9 @@
 | [https://aka.platform.uno/demo-unexpected-apis](https://unexpectedapis.uno/) | Demo unexpected APIs | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/Design-to-Code](https://platform.uno/docs/articles/external/figma-docs/get-started.html) | Design-to-Code | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/discord](https://discord.com/invite/XjsmQHdKfq) | discord | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/discussions](https://github.com/unoplatform/uno/discussions) | discussions | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/dotnet-new-templates](https://platform.uno/docs/articles/get-started-dotnet-new.html) | dotnet new templates docs | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/enhancement-request](https://github.com/unoplatform/uno/issues/new?assignees=&labels=kind/enhancement,triage/untriaged,difficulty/tbd&projects=&template=enhancement.yml) | enhancement-request | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/event-tracing-howto](https://github.com/unoplatform/Uno.Diagnostics.Eventing/blob/main/doc/using-event-tracing.md) | Event Tracing Howto | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/event-tracing-profile](https://github.com/unoplatform/Uno.Diagnostics.Eventing/tree/master/src/Uno.ETLTranslator/Content) | Uno Event Tracing Profile | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/extensions-dependency-injection](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/DependencyInjection/DependencyInjectionOverview.html) | extensions-dependency-injection | ![](https://img.shields.io/badge/200-success-green) | OK |
