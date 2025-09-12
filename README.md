@@ -1,7 +1,6 @@
 | AKA Link | Title | HTTP Result | HTTP Status Line |
 | --- | --- | --- | --- |
 | [https://aka.platform.uno/uno-material-m3-colors](https://m3.material.io/styles/color/roles/color-roles) | Material 3 color guidelines | ![](https://img.shields.io/badge/404-error-red) | Not Found |
-| [https://aka.platform.uno/feature-prism](https://prismlibrary.com) | Uno Feature Prism | ![](https://img.shields.io/badge/403-error-red) | Site Disabled |
 | [https://aka.platform.uno/uno-figma-material-toolkit](https://www.figma.com/community/file/1110792522046146058/uno-platform-material-toolkit) | Uno Figma Material Toolkit | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-plugin](https://www.figma.com/community/plugin/1045528009520465828/uno-platform-figma-to-c-or-xaml) | Uno Figma Plugin | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
 | [https://aka.platform.uno/uno-figma-simplecalc-workshop](https://www.figma.com/community/file/1302362273713845354/simple-calc-workshop) | uno-figma-simplecalc-workshop | ![](https://img.shields.io/badge/403-error-red) | Forbidden |
@@ -93,6 +92,7 @@
 | [https://aka.platform.uno/feature-mvux](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Mvux/Overview.html) | Uno Feature MVUX | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-mvvm](https://platform.uno/docs/articles/external/workshops/simple-calc/modules/MVVM-XAML/04-App%20Architecture/README.html) | Uno Feature MVVM | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-navigation](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Navigation/NavigationOverview.html) | Uno Feature Navigation | ![](https://img.shields.io/badge/200-success-green) | OK |
+| [https://aka.platform.uno/feature-prism](https://prismlibrary.com) | Uno Feature Prism | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-serilog](https://platform.uno/docs/articles/external/uno.extensions/doc/Learn/Logging/LoggingOverview.html) | Uno Feature Serilog | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-skia](https://platform.uno/docs/articles/features/using-skia-desktop.html) | Uno Feature Skia | ![](https://img.shields.io/badge/200-success-green) | OK |
 | [https://aka.platform.uno/feature-storage](https://platform.uno/docs/articles/external/uno.extensions/doc/ExtensionsOverview.html) | Uno Feature Storage | ![](https://img.shields.io/badge/200-success-green) | OK |
