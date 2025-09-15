@@ -105,13 +105,13 @@ class Program
         await using (StreamWriter file = new(markdownFileName))
         {
             // Create a beautiful Markdown table
-            await file.WriteLineAsync("| AKA Link | Title | HTTP Result | HTTP Status Line |");
+            await file.WriteLineAsync("| AKA Link <br/> Destination URL | Title | HTTP Result | HTTP Status Line |");
             await file.WriteLineAsync("| --- | --- | --- | --- |");
 
             foreach (var (rowKey, akaLink, url, clicks, title, httpResult, httpStatusLine) in rows)
             {
                 string formattedAkaLink = EscapeMarkdownValue(akaLink);
-                string formattedUrl = url;
+                string formattedUrl = EscapeMarkdownValue(url);
                 string formattedTitle = EscapeMarkdownValue(title);
                 
                 // Coloring the HTTP result based on its value
@@ -122,8 +122,9 @@ class Program
                     >= 400 => $"![](https://img.shields.io/badge/{httpResult}-error-red)",
                     _ => $"![](https://img.shields.io/badge/{httpResult}-unknown-gray)"
                 };
+
                 await file.WriteLineAsync(
-                    $"| [{formattedAkaLink}]({formattedUrl}) | {formattedTitle} | {httpResultBadge} | {EscapeMarkdownValue(httpStatusLine)} |");
+                    $"| [{formattedAkaLink}](<{url}>)<br/><sub>`{formattedUrl}`</sub> | {formattedTitle} | {httpResultBadge} | {EscapeMarkdownValue(httpStatusLine)} |");
             }
         }
     }
