@@ -105,7 +105,7 @@ class Program
         await using (StreamWriter file = new(markdownFileName))
         {
             // Create a beautiful Markdown table
-            await file.WriteLineAsync("| AKA Link <br/> Destination URL | Title | HTTP Result | HTTP Status Line |");
+            await file.WriteLineAsync("| HTTP Result | HTTP Status | AKA Link <br/> Destination URL | Title |");
             await file.WriteLineAsync("| --- | --- | --- | --- |");
 
             foreach (var (rowKey, akaLink, url, clicks, title, httpResult, httpStatusLine) in rows)
@@ -124,7 +124,7 @@ class Program
                 };
 
                 await file.WriteLineAsync(
-                    $"| [{formattedAkaLink}](<{url}>)<br/><sub><div style=\"max-width:300px; white-space:normal;\">`{formattedUrl}`</div></sub> | {formattedTitle} | {httpResultBadge} | {EscapeMarkdownValue(httpStatusLine)} |");
+                    $"| {httpResultBadge} | {EscapeMarkdownValue(httpStatusLine)} | [{formattedAkaLink}](<{url}>)<br/><sub>`{formattedUrl}`</sub> | {formattedTitle} |");
             }
         }
     }
