@@ -124,7 +124,7 @@ class Program
                 };
 
                 await file.WriteLineAsync(
-                    $"| [{formattedAkaLink}](<{url}>)<br/><sub>`{formattedUrl}`</sub> | {formattedTitle} | {httpResultBadge} | {EscapeMarkdownValue(httpStatusLine)} |");
+                    $"| [{formattedAkaLink}](<{url}>)<br/><sub><div style=\"max-width:300px; white-space:normal;\">`{formattedUrl}`</div></sub> | {formattedTitle} | {httpResultBadge} | {EscapeMarkdownValue(httpStatusLine)} |");
             }
         }
     }
